@@ -1,2 +1,3 @@
-# boilerplate-latex
- Personal Boikerplate for a latex book
+# Boilerplate de un libro en latex
+
+

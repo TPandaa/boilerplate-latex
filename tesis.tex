@@ -1,32 +1,30 @@
 \documentclass[11pt]{book}
-\usepackage{amssymb,amsmath,epsfig,fancyhdr,enumerate, caption, pst-node,anysize}
-\usepackage{float, graphics,amsfonts,latexsym,epstopdf, import}
+\usepackage{amssymb,amsmath, amsthm, epsfig,fancyhdr,enumerate, caption, pst-node,anysize}
+\usepackage{float, graphics,amsfonts,latexsym,epstopdf, import, epigraph, hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\usepackage{amsthm} %% Para la definición de los teoremas
 
-
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+}
 
 %% Para cambiar el tipo de letra
 \usepackage[T1]{fontenc}
 \usepackage{accanthis}
 %%
 
-
-
 %%%% Para imágenes
 \usepackage{graphicx}
-\graphicspath{ {images/} }
+\graphicspath{ {images/}{../images/}}
 \usepackage{subcaption} % Para múltiples imágenes
 \usepackage{caption} % Para el texto de las imágenes
 
 
-
-%%%%% para los apéndices
-\usepackage[toc,page]{appendix}
-
 %%%% Estilo de la pagina
 \pagestyle{fancyplain}
+
 %%%Que la linea de la cabecera este del tamaño del texto de la cabecera
 \addtolength{\headwidth}{-25pt}
 
@@ -59,7 +57,6 @@
 \textheight = 21cm
 
 
-
 %%% Para las cajas de lemas, teoremas, etc
 \theoremstyle{plain}
 \theoremstyle{definition}
@@ -70,16 +67,25 @@
 \newtheorem{definicion} {\textbf{ \textit Definición}}
 \newtheorem{problema}{\textbf{ \textit Problema}}
 \newtheorem{observacion}{\textbf{\textit{Observación}}}
-\newtheorem*{prueba}{\textit{Prueba}}
-
+\newtheorem{proposicion}{\textbf{\textit{Proposición}}}
 
 \title{\LARGE Titulo}
-\author{{\Large Autor}}
+\author{{\Large mapashi}}
 \date{\today}
 
 \begin{document}
-\include{capitulos/Propuesta}
-\end{document}
+\maketitle
+\include{capitulos/00Agradecimientos}
+\tableofcontents
+\listoffigures
+% \include{capitulos/01Capitulo1}
 
-%% libro.tex termina aquí.
+% \appendix
+% \include{capitulos/apediceA}
+
+\bibliographystyle{alpha}
+\bibliography{biblio/jabrefBib}
+
+\end{document}
+%% tesis.tex termina aquí.
 

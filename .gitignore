@@ -18,3 +18,4 @@ tesis.fdb_latexmk
 *.fls
 *.fdb_latexmk
 *.json
+*.bak
